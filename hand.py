@@ -3,10 +3,11 @@ from eval7 import evaluate, Card, handtype
 
 
 class Hand:
-    def __init__(self, front=None, mid=None, back=None):
+    def __init__(self, front=None, mid=None, back=None, dead_cards=None):
         self.front = front if front else []
         self.mid = mid if mid else []
         self.back = back if back else []
+        self.dead_cards = dead_cards if dead_cards else []
 
         self.last_update = tuple()
 
